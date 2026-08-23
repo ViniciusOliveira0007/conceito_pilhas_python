@@ -1,5 +1,5 @@
 '''
-Literalmente o que eu fiz no execercício 4, mas com uma questão que importa a sequência
+Literalmente o que eu fiz no execercício 4, mas com uma questão que não importa a sequência
 
 
 '''
