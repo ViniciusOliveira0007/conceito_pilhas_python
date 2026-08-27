@@ -11,20 +11,17 @@ print(pilha)
 pilha_verificada = []
 
 for i in pilha:
-    
-    if i in pilha and i in pilha_verificada:
+   
+    if i not in pilha_verificada:
         quantidade = pilha.count(i)
-        pilha_verificada.append('&&')
-        pilha_verificada.append(i)
-        pilha_verificada.append(quantidade)
-       
         
-    else:
-        if i in pilha_verificada:
+       
+        if quantidade > 1:
+            pilha_verificada.append('&&')
             pilha_verificada.append(i)
-
+            pilha_verificada.append(quantidade)
         else:
-            pass
+            pilha_verificada.append(i)
 
 print('\nDados limpos com suas sequência:')
 print(*pilha_verificada)

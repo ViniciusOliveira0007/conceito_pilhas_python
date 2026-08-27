@@ -9,7 +9,7 @@ Segundo jeito:
     igual que  foi feito em sala no caderno.
     
 '''
-
+'''
 limite = int(input("Quantos valores terá sua expressão:\n"))
 contador = 0
 lista_valores =[]
@@ -63,3 +63,19 @@ while contador < limite_operadores:
         break
 
     print(lista_valores)
+
+    '''
+
+
+
+
+# Empilha 10 valores reais
+pilha = []
+for i in range(10):
+    valor = float(input(f"Valor {i+1}: "))
+    pilha.append(valor)
+
+# Imprime desempilhando
+print("\nSaída da pilha:")
+while pilha:
+    print(pilha.pop())

@@ -3,7 +3,7 @@ Tem uma pilha com 10 elementos inteiros e tenho que fazer uma segunda que não t
 
 '''
 
-
+'''
 print('-'* 10 +'\tDigite 10 elementos para a pilha 1\t'+10*'-')
 contador = 0
 lista_pilha_01 = []
@@ -26,3 +26,18 @@ for i in lista_pilha_01:
 lista_pilha_02.sort()
 print('A lista sem números repetidos:')
 print(lista_pilha_02)
+
+
+
+'''
+
+
+p1 = [1, 2, 1, 3, 2, 4, 1, 7, 7, 3]
+p2 = [] 
+
+while p1:
+    valor = p1.pop(0)
+    if valor not in p2:    
+        p2.append(valor)  
+
+print(p2)
